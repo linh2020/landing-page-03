@@ -32,10 +32,15 @@ a {
 	background: var(--header-bg);
 }
 
+.header-top {
+	display: flex;
+}
+
 .logo {
 	display: inline-flex;
 	position: relative;
 	font-size: 1rem;
+	margin-right: 304px;
 }
 
 .logo__circle::before,
@@ -76,4 +81,28 @@ a {
 .logo_brand--small {
 	font-size: 1.2em;
 	font-weight: 300;
+}
+
+/* Navbar */
+nav.menu ul {
+	display: flex;
+	gap: 42px;
+	color: #c9d2da;
+}
+
+nav.menu a {
+	color: #c9d2da;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.75; /* 175% */
+}
+
+nav.menu ul > li.active {
+	list-style-type: disc;
+}
+
+nav.menu ul > li.active a {
+	color: #fff;
+	font-weight: 400;
+	cursor: default;
 }
