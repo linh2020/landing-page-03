@@ -16,6 +16,15 @@ body {
 	font-family: "Sora", sans-serif;
 }
 /* Common  */
+.btn {
+	display: inline-block;
+	padding: 0 20px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 30px;
+	background: #2e80ce;
+	color: #fff;
+}
 a {
 	text-decoration: none;
 }
@@ -30,12 +39,13 @@ a {
 .header {
 	min-height: 100vh;
 	background: var(--header-bg);
+	padding-top: 30px;
 }
 
-.header-top {
+/* .header-top {
 	display: flex;
 	align-items: center;
-}
+} */
 
 .logo {
 	display: inline-flex;
@@ -84,54 +94,42 @@ a {
 	font-weight: 300;
 }
 
-/* Navbar */
-nav.menu ul {
+/* Header top */
+.header-top {
+	margin-top: 30px;
 	display: flex;
-	gap: 42px;
-	color: #c9d2da;
+	justify-content: space-between;
+	align-items: center;
 }
 
-nav.menu a {
+/* Navbar */
+.navbar__list {
+	display: flex;
+}
+.action__btn,
+.navbar__link {
+	padding: 6px 21px;
 	color: #c9d2da;
 	font-size: 1.6rem;
 	font-weight: 300;
-	line-height: 1.75; /* 175% */
 }
 
-nav.menu ul > li.active {
-	list-style-type: disc;
-}
-
-nav.menu ul > li.active a {
+.navbar__link:hover,
+.navbar__link--active {
+	text-shadow: 1px 0 0 currentColor;
 	color: #fff;
-	font-weight: 400;
-	cursor: default;
 }
 
-/* Right menu */
-.right-menu {
-	margin-left: 222px;
-	display: flex;
-	gap: 28px;
-	align-items: center;
-}
-.right-menu .login {
-	color: #c9d2da;
-	font-weight: 300;
-	line-height: 1.75; /* 175% */
-}
-
-.right-menu .sign-up {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 104px;
-	height: 44px;
-	border-radius: 22px;
-	background: var(--primary-color);
-	color: #fff;
-	font-weight: 400;
-	line-height: 28px; /* 175% */
+.navbar__link--active::before {
+	position: relative;
+	top: -2px;
+	left: -8px;
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
 }
 
 /*  */
