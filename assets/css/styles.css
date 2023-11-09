@@ -387,3 +387,49 @@ a {
   font-weight: 300;
   line-height: 1.75; /* 175% */
 }
+
+/*  */
+.feature {
+  padding: 170px 0;
+}
+
+.feature__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 130px;
+}
+
+.feature__media {
+  width: 48%;
+}
+
+.future__images {
+  position: relative;
+  padding: 0 58px 121px 0;
+}
+
+.future__image {
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.future__image:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.feature__content {
+  width: 51%;
+}
+
+.feature__cta {
+  margin-top: 38px;
+}
