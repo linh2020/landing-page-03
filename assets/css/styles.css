@@ -586,6 +586,11 @@ a {
   display: inline-block;
   margin: 28px 0 28px;
   color: #10375c;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.56; /* 155.556% */
+  text-decoration-line: underline;
 }
 
 /* Right area */
