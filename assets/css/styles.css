@@ -332,6 +332,35 @@ a {
   line-height: 1.75; /* 175% */
 }
 
+.control {
+  display: flex;
+  gap: 18px;
+}
+
+.control__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  color: #575f66;
+  background: #fff;
+  outline: none;
+  transition: 0.25s;
+}
+
+.control__btn:hover {
+  background-color: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
+
+.control-icon-next {
+  rotate: 180deg;
+}
+
 /* How it works */
 .work {
   padding: 100px 0;
@@ -453,6 +482,11 @@ a {
   column-gap: 30px;
 }
 
+.member__control {
+  margin-top: 38px;
+  justify-content: center;
+}
+
 .member-item {
   text-align: center;
 }
@@ -489,37 +523,6 @@ a {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.86; /* 185.714% */
-}
-
-.member__control {
-  margin-top: 38px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
-.member__control-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid #575f66;
-  color: #575f66;
-  background: #fff;
-  outline: none;
-  transition: 0.25s;
-}
-
-.member__control-btn:hover {
-  background-color: #2e80ce;
-  border-color: #2e80ce;
-  color: #fff;
-}
-
-.member__control-icon-next {
-  rotate: 180deg;
 }
 
 /* Mobile platform */
@@ -561,4 +564,46 @@ a {
 .mobile__download {
   display: flex;
   gap: 28px;
+}
+
+/* News */
+.news {
+  margin: 85px 0 85px;
+}
+.news .container {
+  padding: 85px 0 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left area */
+.news__content {
+  width: 40.2%;
+}
+
+.news__more {
+  display: inline-block;
+  margin: 28px 0 28px;
+}
+
+/* Right area */
+.news__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.news-item {
+  width: 270px;
+  height: 375px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background-color: orange;
+}
+
+.news-item__thumb {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
 }
